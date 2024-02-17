@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Business</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            z-index: 1000;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer h4 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Smart Business</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#infos">Mais informações</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section>
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="2500" class="carousel-item active">
+                            <img class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h5>Analise de Projetos</h5>
+                                <p>Elaboramos planos de execução para melhorias na comunicação e acompanhamos de perto os projetos de uma empresa.</p>
+                            </div>
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h5>Programação</h5>
+                                <p>Criamos sistemas e sites para o seu negócio.</p>
+                            </div>
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg"
+                                alt="">
+                            <div class="carousel-caption">
+                                <h5>Estratégia e Gestão</h5>
+                                <p>Elaboramos as melhores estratégias para a sua empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                        type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                            data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="Sobre">
+            <div class="container">
+                <h2>Sobre</h2>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg"
+                                class="card-img-top" alt="Imagem de exemplo">
+                            <div class="card-body">
+                                <h5 class="card-title">Analise de Projetos</h5>
+                                <p class="card-text">Elaboramos planos de execução para melhorias na comunicação e
+                                    acompanhamos de perto os projetos de uma empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg"
+                                class="card-img-top" alt="Imagem de exemplo">
+                            <div class="card-body">
+                                <h5 class="card-title">Programação</h5>
+                                <p class="card-text">Criamos sistemas e sites para o seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg"
+                                class="card-img-top" alt="Imagem de exemplo">
+                            <div class="card-body">
+                                <h5 class="card-title">Estratégia e Gestão</h5>
+                                <p class="card-text">Elaboramos as melhores estratégias para a sua empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 id="infos">Mais informações</h2>
+                <h5>Smart Business: Transformando Dados em Estratégias Inteligentes</h5>
+                <p>A Smart Business é uma empresa inovadora especializada em análise de dados, programação de
+                    software e estratégias de negócios. Combinando expertise técnica e visão estratégica, nós
+                    capacitamos organizações a transformar dados em insights acionáveis, impulsionando o crescimento
+                    e a excelência operacional.</p>
+                <p>Nosso time de especialistas em análise de dados utiliza as mais avançadas técnicas e ferramentas
+                    para extrair informações valiosas a partir de conjuntos complexos de dados. Através de análises
+                    preditivas e descritivas, identificamos padrões, tendências e oportunidades de otimização,
+                    permitindo que nossos clientes tomem decisões embasadas e estratégicas.</p>
+                <p>Além disso, nossa equipe de programação de software desenvolve soluções personalizadas e
+                    inovadoras para atender às necessidades específicas de cada cliente. Desde aplicativos móveis e
+                    plataformas web até sistemas de automação e machine learning, estamos comprometidos em entregar
+                    produtos de alta qualidade que impulsionam a eficiência e a competitividade.</p>
+                <p>Por fim, nossos consultores de estratégia de negócios trabalham em estreita colaboração com os
+                    clientes para desenvolver e implementar estratégias sólidas que impulsionam o crescimento
+                    sustentável e a vantagem competitiva. Através de análises de mercado, benchmarking e planejamento
+                    estratégico, ajudamos nossos clientes a identificar oportunidades de crescimento, superar
+                    desafios e alcançar seus objetivos comerciais.</p>
+                <p>Na Smart Business, estamos comprometidos em capacitar nossos clientes a alcançar o sucesso através
+                    da inteligência de dados, da tecnologia e da estratégia de negócios. Seja qual for o desafio,
+                    estamos aqui para ajudar você a transformar sua visão em realidade e impulsionar o seu negócio
+                    para o futuro.</p>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <h4>© Smart Business - Todos os direitos reservados - 2024 - Criado por Carlos Gouvea</h4>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
